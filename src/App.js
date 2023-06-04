@@ -62,17 +62,17 @@ function App(props) {
   return (
     <>
       <Router>
-        <Navbar title='Text Editor' mode={mode} toggleMode={toggleMode} />
+        <Navbar title="Text Editor" mode={mode} toggleMode={toggleMode} />
         <Alert alert={alert} />
-        <div className='container mx-5'>
+        <div className="container mx-5">
           <Switch>
-            <Route path='/about'>
+            <Route path="/about">
               <About mode={mode} />
             </Route>
-            <Route path='/'>
+            <Route path="/">
               <TextForm
                 showAlert={showAlert}
-                heading='Try Text Editor - Word Counter, Character Counter, Remove extra spaces'
+                heading="Try Text Editor - Word Counter, Character Counter, Remove extra spaces"
                 mode={mode}
               />
             </Route>
