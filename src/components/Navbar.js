@@ -20,7 +20,7 @@ export default function Navbar(props) {
             </li>
 
             <li className="nav-item">
-              <a href="/about" className="nav-link" >
+              <a href="https://yashpatel08.github.io/Text-Editor/about" className="nav-link" >
                {props.aboutText}
               </a>  
             </li>
