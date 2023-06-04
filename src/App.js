@@ -66,7 +66,7 @@ function App(props) {
         <Alert alert={alert} />
         <div className="container mx-5">
           <Switch>
-            <Route path="/about">
+            <Route path="/about" component={About}>
               <About mode={mode} />
             </Route>
             <Route path="/">
