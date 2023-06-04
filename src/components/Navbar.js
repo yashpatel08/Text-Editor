@@ -20,7 +20,7 @@ export default function Navbar(props) {
             </li>
 
             <li className="nav-item">
-              <a href="../about.js" className="nav-link" >
+              <a href="../about" className="nav-link" >
                {props.aboutText}
               </a>  
             </li>
