@@ -14,15 +14,15 @@ export default function Navbar(props) {
           </a>
           <ul className="nav nav-pills column">
             <li className="nav-item">
-              <a className="nav-link" aria-current="page" href="/">
+              <Link className="nav-link" aria-current="page" to="/">
                 Home
-              </a>
+              </Link>
             </li>
 
             <li className="nav-item">
-              <a href="https://yashpatel08.github.io/Text-Editor/about.js" className="nav-link" >
+              <Link to="/about" className="nav-link" >
                {props.aboutText}
-              </a>  
+              </Link>  
             </li>
           </ul>
         </div>
