@@ -62,7 +62,7 @@ function App(props) {
   return (
     <>
       <Router>
-        <Navbar title="Text Editor" mode={mode} toggleMode={toggleMode} />
+        <Navbar title="Text Editor" path="/" mode={mode} toggleMode={toggleMode} />
         <Alert alert={alert} />
         <div className="container mx-5">
           <Switch>

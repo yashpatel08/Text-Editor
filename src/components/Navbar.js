@@ -14,15 +14,15 @@ export default function Navbar(props) {
           </a>
           <ul className="nav nav-pills column">
             <li className="nav-item">
-              <Link className="nav-link" aria-current="page" to="/">
+              <a className="nav-link" aria-current="page" href="/">
                 Home
-              </Link>
+              </a>
             </li>
 
             <li className="nav-item">
-              <Link to="/about" className="nav-link" >
+              <a href="/about" className="nav-link" >
                {props.aboutText}
-              </Link>  
+              </a>  
             </li>
           </ul>
         </div>
