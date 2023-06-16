@@ -55,8 +55,8 @@ def generate_contributors_section(contributors):
     return section
 
 # Specify the owner and repository name
-owner = "YourGitHubUsername"
-repo = "YourRepositoryName"
+owner = "yashpatel08"
+repo = "yashpatel08"
 
 # Get the contributors
 contributors = get_contributors(owner, repo)
