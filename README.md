@@ -59,7 +59,7 @@ owner = "yashpatel08"
 repo = "yashpatel08"
 
 # Get the contributors
-contributors = get_contributors(owner, repo)
+contributors = get_contributors(yashpatel08, yashpatel08)
 
 # Generate the contributors section
 contributors_section = generate_contributors_section(contributors)
