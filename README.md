@@ -35,9 +35,43 @@ Welcome to the Text Editing Website! This website provides various functions to 
 
 If you are interested in contributing to the development of this website or have any suggestions or bug reports, please feel free to reach out to us. We appreciate your feedback and would love to make this website even better.
 
-## License
-
-This project is licensed under the [MIT License](LICENSE). Feel free to use, modify, and distribute the code as per the terms of the license.
-
----
 We hope you find the Text Editing Website helpful for your text manipulation needs. Enjoy editing your text effortlessly with our user-friendly interface.
+
+import requests
+
+def get_contributors(owner, repo):
+    url = f"https://api.github.com/repos/{owner}/{repo}/contributors"
+    response = requests.get(url)
+    contributors = response.json()
+    return contributors
+
+def generate_contributors_section(contributors):
+    section = "## Contributors\n\n"
+    for contributor in contributors:
+        username = contributor['login']
+        avatar_url = contributor['avatar_url']
+        profile_url = contributor['html_url']
+        section += f"[![{username}]({avatar_url}|width=100px)]({profile_url}) "
+    return section
+
+# Specify the owner and repository name
+owner = "YourGitHubUsername"
+repo = "YourRepositoryName"
+
+# Get the contributors
+contributors = get_contributors(owner, repo)
+
+# Generate the contributors section
+contributors_section = generate_contributors_section(contributors)
+
+# Read the existing README file
+with open("README.md", "r") as readme_file:
+    readme_content = readme_file.read()
+
+# Insert the contributors section into the README content
+updated_readme = readme_content.replace("<!-- CONTRIBUTORS -->", contributors_section)
+
+# Write the updated README content back to the file
+with open("README.md", "w") as readme_file:
+    readme_file.write(updated_readme)
+
