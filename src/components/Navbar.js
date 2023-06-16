@@ -9,12 +9,12 @@ export default function Navbar(props) {
         className={`navbar navbar-default navbar-${props.mode} bg-${props.mode}`}
       >
         <div className="navbar-header ">  
-          <a className="navbar-brand mx-2" href="/">
+          <a className="navbar-brand mx-2" href="/home">
             {props.title}
           </a>
           <ul className="nav nav-pills column">
             <li className="nav-item">
-              <a className="nav-link" aria-current="page" href="/">
+              <a className="nav-link" aria-current="page" href="/home">
                 Home
               </a>
             </li>
