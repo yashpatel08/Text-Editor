@@ -1,5 +1,5 @@
 {
-  "homepage": "https://yashpatel08.github.io/Text-Editor",
+  "homepage": "https://github.com/yashpatel08/News-Network",
   "name": "my-app",
   "version": "0.1.0",
   "private": true,
@@ -14,8 +14,7 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    
-    "start": "react-scripts start",
+    "start": "react-scripts start",   
     "predeploy":"npm run build",
     "deploy": "gh-pages -d build",
     "build": "react-scripts build",
