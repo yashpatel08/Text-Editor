@@ -37,7 +37,7 @@ export default function About(props) {
       </h2>
       <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
         <div class="accordion-body" style={myStyle}>
-          Text Editor is a free character tool provides instant character count & word count statistics for a given text. TextUtils reports the number of words and characters. Thus it is suitable for writing text with word/character limit
+          Text Editor is a free character tool provides instant character count & word count statistics for a given text. Text Editor reports the number of words and characters. Thus it is suitable for writing text with word/character limit
         </div>
       </div>
     </div>
